@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<a class="btn btn-outline-dark" href="{% url 'app:calendar' %}"> Calendar </a>
+<div class="clearfix">
+        <h1 class="display-4">Event Name: {{ event.title }}</h1><br>
+        <p>From <span style="color: gray;">{{ event.start_time }}</span></p>
+        <p> To <span style="color: gray;">{{ event.end_time }}</span></p>
+        <hr>
+        <p>{{ event.description }}</p>
+    </div>
+{% endblock %}

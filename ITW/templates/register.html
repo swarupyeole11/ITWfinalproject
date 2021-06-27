@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Signup
+{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+
+  {% block content %}
+  <br>
+  <center>
+    <h1 class="display-4"> Registration Form </h1>
+  </center>
+   <br>
+
+  <form method="post" style="margin: 0px 500px 0px 500px; ">
+      {% csrf_token %}
+      {{ user_form|crispy }}
+      {{ profile_form|crispy }} <br>
+      <center>
+        <input type="submit" class="btn btn-outline-dark" value="Submit">
+      </center>
+  </form>
+  
+  {% endblock %}

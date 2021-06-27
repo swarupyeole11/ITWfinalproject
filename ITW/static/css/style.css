@@ -1,0 +1,161 @@
+.navbar{
+  font-size: 1.45em;
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100%;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-item {
+  transition: all 1s;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.btn {
+  outline: none;
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+
+.clearfix {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: auto;;
+  grid-template-rows: 40px;
+  grid-gap: 20px
+}
+.next_month {
+  grid-column-start: 9;
+}
+
+.new_event {
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+
+.year-month {
+  display: flex;
+}
+
+.warning {
+  margin-top: 300px;
+}
+
+.login {
+  margin-top: 200px;
+  margin-left: 720px;
+  width: auto;
+  border: 1px solid;
+}
+
+.event-form {
+  margin-left: 660px;
+  margin-right: 660px;
+  width: 400px;
+  position: relative;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* CSS for Calendar */
+.calendar-event{
+  display: grid;
+  grid-template-columns: 25% 98% auto;
+  grid-template-rows: 646px;
+  grid-gap: 20px
+}
+
+.event-viewbox {
+  margin-left: 15px;
+  height: 100%;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calendar {
+  width: 74.5%;
+  height: 100%;
+  margin: auto;
+  font-size: auto;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+table.calendar {
+  margin: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.calendar td {
+  border: 1px solid black;
+}
+
+.calendar tr {
+  border: 1px solid black;
+  width: auto;
+}
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar td {
+  width: 300px;
+  height: 110px;
+  padding: 20px 0px 0px 5px;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+ul {
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+}
+
+a {
+  color: #17a2b8;
+}
+
+.register_form {
+  margin: 100px 350px;
+}
+
+h4.display-6 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#welcometext {
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  color: black;
+  border: 3px solid black;
+  margin: 140px 400px 0px 400px;
+  border-radius: 8px;
+  padding: 25px 0px;
+}
